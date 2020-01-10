@@ -1,0 +1,12 @@
+1-A function designates in programming a subroutine making it
+ possible to carry out repetitive operations.the use of the function
+ to factorize the code ,that is to say to offer general procedures,
+shared by the program and placed at a precise place where they can 
+be easily found to modify or adapt.it also obvious for all other languages 
+not only the C.function make easy the general view of the code and avoids 
+repetition of the codes
+
+2-the helpers is created in another module to avoid the repetition of the
+codes in the contacts module.the helpers module is not included in
+the contacts module  because it will make the module contacts huge and difficult
+to figure out

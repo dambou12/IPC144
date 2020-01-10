@@ -1,0 +1,11 @@
+1-the function getTenDigitPhone has helped us to check if the user
+ will enter the 10 digits of the phone number and then the function
+ getfindContactIndex help to be able to check if the phone number entered 
+corresponds to the one who has this address brief these two functions are 
+essential for the safety .
+
+2-before started this assigmnet 2 I wasn't fixed well on modular functions
+ and also how to declare the prototypes, how to call the function.
+But after finished this exercise, I had a clear and comprehensive idea of 
+the function modular and how to call the function
+
