@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+// Put your code below:
+
+#include <stdio.h>
+#include <string.h>
+void stuff(char str[40]);
+main(){ char str[40]; 
+int i;
+printf("\n enter the string:");
+scanf("%s", &str); 
+printf("\n the given string is:"); 
+printf("\n %s", str); 
+stuff(str);}
+void stuff(char str[40]){ int i, j, k = 0, l, n, z; 
+printf("\n now we are stuffing the data::\n"); 
+n = strlen(str); 
+for (i = 0; i < n; i++) { if (str[i] == '1') { k = 1; 
+for (l = i + 1; l <= i + 5; l++) 
+{ if (str[l] == '1') 
+k++; 
+else 
+break; 
+} if (k == 6) { 
+i = i + 6; 
+z = n + 1; 
+for (j = z; j >= i; j--) 
+{ str[j] = str[j - 1];
+ } str[j] = '0'; 
+} } } 
+printf("\nThe resultant string after stuffing is..\n"); 
+printf("%s\n", str);
+}

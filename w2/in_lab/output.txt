@@ -1,0 +1,9 @@
+Script started on Tue 30 Jan 2018 04:51:31 PM EST
+stchoutatgoum@matrix:~/IPC144/w2/in_lab> W[[Kws
+Please enter the amount to be paid: $8.68
+Loonies required: 8, balance owing $0.68
+Quarters required: 2, balance owing $0.18
+stchoutatgoum@matrix:~/IPC144/w2/in_lab> exit
+exit
+
+Script done on Tue 30 Jan 2018 04:51:53 PM EST

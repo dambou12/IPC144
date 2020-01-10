@@ -1,0 +1,101 @@
+// Name:TCHOUTEDJOUM DAMBOU SERGES 
+// Student Number:
+// Email: schoutatgoum@myseneca.ca
+// Section:ipc144 srr
+// Workshop:3
+
+#define _CRT_SECURE_NO_WARNINGS
+
+// Put your code below:
+
+#include <stdio.h>
+
+int main(void)
+{
+       //HERE WE DECLARE THE VARIABLES THAT WE SHOULD USE LOWER
+
+	int low;
+	int high;
+	int NUMS = 4;
+	int lowest = 0;
+	int highest = 0;
+	int lowTotal = 0;
+	int highTotal = 0;
+	int highestday = 0;
+	int lowestday = 0;
+	float average;
+	int i;
+	  
+       //HERE WE HAVE A PROGRAM TITLE
+
+	printf("---=== IPC Temperature Analyzer ===---\n");
+
+	// HERE WE ENTER THE PROGRAM DATA AND THE FIRST IF CONDITION FOR
+       // SELECTING LOW AND HIGH TEMPERATURE
+
+	for (i = 0; i < NUMS; ++i)
+	{
+		do {
+			printf("Enter the high value for day %d: ", i + 1);
+			scanf("%d", &high);
+			printf("Enter the low value for day %d: ", i + 1);
+			scanf("%d", &low);
+
+			if ((low < -40 || high>40) || (low > high))
+			{
+				printf("Incorrect values, temperstures must be in the range -40 to 40,high must be greater than low\n\n");
+			}
+
+
+
+		} while ((low < -40 || high>40) || (low > high));
+
+	  //HERE WE CALCULATE THE TOTAL OF HIGH AND LOW TEMPERATURE AFTER SECOND LOOP
+
+		lowTotal = (lowTotal + low);
+		highTotal = (highTotal + high);
+
+
+	   // HERE WE WANT THE LOAD OF THE HIGHEST TEMPERATURE TO BE RETAINED
+	   // AT THE END OF THE LOOP,THE VALUE OF THE LOWEST ALSO HAS BEEN RETAINED 
+	  //AND THE DAY OF THIS HIGHEST AND LOWEST TEMPERATURE HAS BEEN LOAD 
+
+		if (high > highest)
+		{
+			highest = high;
+			highestday = i + 1;
+		}
+		if (low < lowest)
+		{
+			lowest = low;
+			lowestday = i + 1;
+		}
+
+	}
+		   // HERE IS CALCULATION OF THE AVERAGE OF TEMPERATURE
+
+	average = (float)(lowTotal + highTotal) / (NUMS * 2);
+
+	//HERE WE DISPLAY THE RESULT ASKING
+
+	printf("The average (mean) temperature was: %.2lf\n", average);
+	printf("The highest temperature was %d, on day %d\n", highest, highestday);
+	printf("The lowest temperature was %d, on day %d\n", lowest, lowestday);
+
+	return 0;
+}
+
+
+ 2-      the difference between DO-WHILE and WHILE is that of input ,the do-while
+  first add data before checking the condition and if the condition is respected then
+ it continues and if it doesn'trespect ,it leaves the loop whereas with WHILE ,
+the program will not work even one time if the condition is no respected.
+in other word with WHILE there is not first record if the conditin is not respected
+
+ 3-the purpose of the conditional expression is to select one of two expressions
+depending on a third ,boolean,expression
+
+
+
+
+

@@ -1,0 +1,10 @@
+
+In line number 138 of your output:
+The output should be:
+Employee 112 will be removed
+But your output is: 
+Employee 112 will be removed 
+                            ^
+----------------------------|
+Professor's character ASCII code: hex(d), dec(13)
+un-matched character ASCII code: hex(20), dec(32)

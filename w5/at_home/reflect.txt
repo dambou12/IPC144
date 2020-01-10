@@ -1,0 +1,9 @@
+
+1-first ,parallel arrays are harder to manage;each time you add another
+field you have to add another array.second ,parallel arrays that aren't
+just acting as raw storage suck.
+ Array of struct runs faster for most uses and is easier to implement.
+
+2-it is in the head because the program is executed line by line starting from 
+the top .means that when the machine will execute the program ,he will know which have
+to come

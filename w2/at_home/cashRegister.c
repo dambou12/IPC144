@@ -1,0 +1,63 @@
+/* TCHOUTEDJOUM DAMBOU
+   109240176
+   IPC144 SRR
+   stchoutatgoum@myseneca.ca
+*/
+# include<stdio.h>
+ 
+ int main(void)
+{
+  double amount;
+  int LooniesNo;
+  int QuatersNo;
+  int DimesNo;
+  int NickelsNo;
+  int PenniesNo;
+  int  newamount1;
+  int  newamount2;
+  int  newamount3;
+  int newamount4;
+  int newamount5;
+  double GST;
+  int balanceOwing;
+ printf("Please enter the amount to be paid: $");
+  scanf("%lf",&amount);
+
+  GST=(amount*0.13)+0.005;
+  balanceOwing= (amount + GST)*100;
+
+  //calculate the number of loonies
+
+     LooniesNo = (int)balanceOwing/100;
+    newamount1 = (balanceOwing % 100);
+
+    //calculate  quaters
+
+     QuatersNo= (newamount1 /25);
+      newamount2=(newamount1 %25);
+
+    // calcul dimes
+       DimesNo= (newamount2/10);
+    newamount3= (newamount2 % 10);
+   
+   // calcul nickels
+
+    NickelsNo=(newamount3/5) ;
+    newamount4 = (newamount3 % 5);
+
+   // calculate pennies
+
+    PenniesNo = newamount4 /1;
+    newamount5 = (newamount4 % 1);
+
+    printf("GST: %.2lf\n",GST);
+    printf("Balance owing: $%1.2lf\n",(float)balanceOwing/100);
+    printf("Loonies required: %d, balance owing $%1.2f\n",LooniesNo,(float)newamount1/100);
+    printf("Quarters required: %d, balance owing $%1.2lf\n",QuatersNo,(float)newamount2/100);
+    printf("Dimes required: %d, balance owing $%1.2lf\n",DimesNo,(float)newamount3/100);
+    printf("Nickels required: %d, balance owing $%1.2lf\n",NickelsNo,(float)newamount4/100);
+    printf("Pennies required: %d, balance owing $%1.2lf\n",PenniesNo,(float)newamount5/100);
+
+
+return 0;
+}

@@ -1,0 +1,12 @@
+1-the arrays of this program have to be declared to hold 10 elements because the maximun days to feel is 10 days
+
+2-about the advantage of array :arrays used to represent multiple data items of same type
+by using only single name,it can be used to implement other data structure like list.
+ about the disadvantage:with arrays we must know in advance that how many elements are
+to be stored in array,arrays is static;it means that array is of fixed size.the 
+memory which is allocated to array can not be incresed or reduced.
+
+3-the last portion (enter a number between 1 and 4 then calculate the average )
+because we have to select the number between 1 and 4 for then if the number is more ,we display
+a messege and if is negative we display another message and exit .but if it is between
+1 and 4 for then we use the loop to calculate the average temperature up to the days enter.

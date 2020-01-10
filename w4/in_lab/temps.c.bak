@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+#include<stdio.h>
+
+   int main(void){
+     int days;
+     int Low[10];
+     int High[10];
+     int i;
+       printf(">---=== IPC Temperature Calculator V2.0 ===---<\n");
+	  
+	do
+     {
+       printf("Please enter the days number between 3 and 10 ,inclusive: ");
+       scanf("%d", &days);
+       printf("\n");
+	      if (days<3 ||days >10)
+		 printf("Invalid entry, please enter a number between 3 and 10,inclusive: ");
+		 scanf("%d", &days);
+		 printf("\n");
+	    }while (days<3||days>10 );
+	  
+	for( i= 0; i < days; i++){
+	   printf("Day %d - High: ",i+1,&High[i]);
+	    scanf("%d",&High[i]);
+	   printf("Day %d - Low: ",i+1,&Low[i]);
+	    scanf("%d",&Low[i]);
+	   }
+	 printf("\n");
+	 printf("Day Hi Low\n");
+	for(i = 0; i < days ;i++ )
+	 printf("%d   %d   %d\n", i+1, High[i], Low[i]);        
+   return 0;
+}
+
+
+
+
